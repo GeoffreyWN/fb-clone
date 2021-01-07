@@ -1,4 +1,3 @@
-import userEvent from "@testing-library/user-event";
 import React from "react";
 import SidebarRow from "./SidebarRow";
 import "./Sidebar.css";
@@ -13,7 +12,7 @@ import ExpandMoreOutlinedIcon from '@material-ui/icons/ExpandMoreOutlined';
 function Sidebar() {
   return (
     <div className="sidebar">
-      <SidebarRow src='image' title="sammy"/>
+      <SidebarRow src='https://www.flaticon.com/svg/static/icons/svg/4003/4003884.svg' title="sammy" />
       <SidebarRow Icon={LocalHospitalIcon} title="COVID-19 Information Center"/>
       <SidebarRow Icon={EmojiFlagsIcon} title="Pages"/>
       <SidebarRow Icon={PeopleIcon} title="Friends"/>
