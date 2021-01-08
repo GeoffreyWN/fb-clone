@@ -8,11 +8,14 @@ import ChatIcon from '@material-ui/icons/Chat';
 import StorefrontIcon from '@material-ui/icons/Storefront';
 import VideoLibraryIcon from '@material-ui/icons/VideoLibrary';
 import ExpandMoreOutlinedIcon from '@material-ui/icons/ExpandMoreOutlined';
+import { useStateValue } from "./StateProvider";
+import userEvent from "@testing-library/user-event";
 
 function Sidebar() {
+  const [{user}, dispatch] = useStateValue();
   return (
     <div className="sidebar">
-      <SidebarRow src='https://www.flaticon.com/svg/static/icons/svg/4003/4003884.svg' title="sammy" />
+      <SidebarRow src={user.photoUrl} title={user.displayName} />
       <SidebarRow Icon={LocalHospitalIcon} title="COVID-19 Information Center"/>
       <SidebarRow Icon={EmojiFlagsIcon} title="Pages"/>
       <SidebarRow Icon={PeopleIcon} title="Friends"/>
