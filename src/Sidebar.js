@@ -21,7 +21,7 @@ function Sidebar() {
       <SidebarRow Icon={ChatIcon} title="Messenger"/>
       <SidebarRow Icon={StorefrontIcon} title="Marketplace"/>
       <SidebarRow Icon={VideoLibraryIcon} title="Videos"/>
-      <SidebarRow Icon={ExpandMoreOutlinedIcon} title="Marketplace"/>
+      <SidebarRow Icon={ExpandMoreOutlinedIcon} title="Settings"/>
 
     </div>
   );
